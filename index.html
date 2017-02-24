@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OOP Quiz App</title>
+	<link href="styles.css" rel="stylesheet">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" type="text/javascript"></script>
+	<script src="app.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>Object Oriented Programming Quiz</h1>
+	<div class="content">
+		<div class="content-inner">
+			<!-- 
+				#quiz-intro shown by default when the page loads, and contains
+				a challenge to the quiz taker and a button to begin the quiz
+			-->
+			<div id="quiz-intro" class="text-center">
+				<h2>You down with OOP? Well try and see...</h2>
+				<button class="start-button" type="button">Start Quiz</button>
+			</div>
+			<!--
+				#quiz-form will contain the question and answers in the 
+				.question-container and .answer-container respectively.
+				It also contains a button to submit an answer.
+			-->
+			<form id="quiz-form" class="hidden">
+				<div class="quiz-container">
+					<p class="question-container text-center"></p>
+					<ul class="answers-container">
+					</ul>
+				</div>
+				<div class="text-center">
+					<button class="submit-answer-button" type="button">Submit Answer</button>
+				</div>
+			</form>
+			<!--
+				#quiz-outro is shown when the user completes the quiz. An
+				appropriate message is displayed in .quiz-outro-message,
+				and the quiz taker can reset the quiz using the reset button.
+			-->
+			<div id="quiz-outro" class="hidden text-center">
+				<div class="quiz-outro-message"></div>
+				<button class="reset-button" type="button">Try again?</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
